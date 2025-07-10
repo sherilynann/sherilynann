@@ -25,7 +25,7 @@ const MainLayout = () => {
     <Box>
       <Box
         sx={{
-          borderBottom: "0.1vw solid black",
+          borderBottom: "0.1vw solid #BEBEBE",
           display: "flex",
           flexDirection: "row",
           fontSize: "0.94vw", // 18px ≈ 0.94vw on 1920px width
