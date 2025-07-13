@@ -154,7 +154,7 @@ const Home = () => {
               <Box sx={{ display: "flex", gap: "2vw" }}>
                 <Typography
                   sx={{
-                    fontSize: "1vw",
+                    fontSize: isMobile ? "2vw" : "1vw",
                     textDecorationLine: "underline",
                     cursor: "pointer",
                   }}
@@ -165,7 +165,7 @@ const Home = () => {
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: "1vw",
+                    fontSize: isMobile ? "2vw" : "1vw",
                     textDecorationLine: "underline",
                     cursor: "pointer",
                   }}
@@ -621,6 +621,9 @@ const Home = () => {
                 paddingX: isMobile ? "2.6vw" : "2.6vw",
                 paddingY: isMobile ? "3vw" : "1.6vw",
                 borderRadius: "2.34vw",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
               }}
             >
               <Box>
@@ -655,7 +658,7 @@ const Home = () => {
                     sherilynchacko1991@gmail.com
                   </Typography>
                 </Box>{" "}
-                <Box
+                {/* <Box
                   sx={{
                     display: "flex ",
                     flexDirection: "row",
@@ -717,7 +720,7 @@ const Home = () => {
                     B209, Platinum Lifestyle, JP Nagar, Phase 8,
                     Bangalore-560083{" "}
                   </Typography>
-                </Box>
+                </Box> */}
               </Box>
             </Box>
           </Box>

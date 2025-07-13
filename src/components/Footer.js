@@ -1,6 +1,5 @@
 import { Box, Divider, IconButton, Typography } from "@mui/material";
 import Signature from "../assets/signature.svg";
-import Copyright from "../assets/copyright.svg";
 import linkedin from "../assets/linkedin.svg";
 import pinterest from "../assets/pinterest.svg";
 import behance from "../assets/behance.svg";
@@ -106,9 +105,9 @@ const Footer = () => {
                   letterSpacing: "0.05vw",
                 }}
               >
-                sherilynchacko1991@gmail.co,
+                sherilynchacko1991@gmail.com
               </Typography>
-              {isMobile && (
+              {/* {isMobile && (
                 <Box sx={{ display: "flex", alignItems: "center", gap: "2vw" }}>
                   {" "}
                   <Divider
@@ -129,9 +128,9 @@ const Footer = () => {
                     </Typography>
                   </Box>
                 </Box>
-              )}
+              )} */}
             </Box>
-            <Box
+            {/* <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
@@ -187,7 +186,7 @@ const Footer = () => {
                   </Box>
                 </Box>
               )}
-            </Box>
+            </Box> */}
           </Box>
         </Box>
 

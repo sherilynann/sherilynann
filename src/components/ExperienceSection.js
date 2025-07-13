@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Stack } from "@mui/material";
+import { useIsMobileScreen } from "./CommonFunctions";
 
 const experienceData = [
   {
@@ -40,6 +41,7 @@ const experienceData = [
 ];
 
 const ExperienceSection = () => {
+  const isMobile = useIsMobileScreen(768);
   return (
     <Box px="1vw" py="3.5vw" fontFamily="Montserrat">
       <Stack sx={{ display: "flex", flexDirection: "column" , gap: "5vw" }}>
@@ -50,7 +52,7 @@ const ExperienceSection = () => {
           >
             <Typography
               fontWeight={600}
-              fontSize="1.04vw" // 20px ≈ 1.04vw
+              fontSize={isMobile ? "1.75vw" : "1.04vw"} // 20px ≈ 1.04vw
               letterSpacing="0.10vw" // 2px ≈ 0.10vw
               color="#252525"
               mb={1}
@@ -59,7 +61,7 @@ const ExperienceSection = () => {
             </Typography>
             <Typography
               fontWeight={400}
-              fontSize="1.04vw"
+              fontSize={isMobile ? "1.5vw" : "1.04vw"}
               letterSpacing="0.10vw"
               color="#252525"
             >
@@ -67,7 +69,7 @@ const ExperienceSection = () => {
             </Typography>
             <Typography
               fontWeight={400}
-              fontSize="1.04vw"
+              fontSize={isMobile ? "1.5vw" : "1.04vw"}
               letterSpacing="0.10vw"
               color="#252525"
             >
